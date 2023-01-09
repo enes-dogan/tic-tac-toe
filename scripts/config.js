@@ -16,7 +16,7 @@ function savePlayerConfig(event) {
   event.preventDefault();
   const formData = new FormData(event.target);
   const enteredPlayername = formData.get('playername').trim();
-  console.log(enteredPlayername);
+  // console.log(enteredPlayername);
 
   if (!enteredPlayername) {
     event.target.firstElementChild.classList.add('error');
